@@ -53,29 +53,40 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <section id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-heading"><h1 class="text-uppercase"><strong>About</strong></h1></h2>
+                <hr class="my-4">
+                <p class="mb-5">            Oh, this? This is just a random horoscope generator.<br>
+                            <b>Wait</b>, are you here because you felt your horoscope didn't apply to you?
+                            <br><a href="/">Here is a more personalized one.</a>
+                            <br><b>But like, how?</b> It uses data I scraped from bad astrology websites and generates random sentences using Markov chains. I used <i>Node.js</i> for the scraping, and <i>Python/Flask</i> for the rest.
+                            <br>The source code is at <a href="https://github.com/ReidTissing/horrorscope">https://github.com/ReidTissing/horrorscope</a>
+                                        </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 ml-auto text-center">
+                <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
+                <p>867-5309</p>
+              </div>
+              <div class="col-lg-4 mr-auto text-center">
+                <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
+                <p>
+                  <a href="mailto:mrnts55@gmail.com">mrnts55@gmail.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-    <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-              <strong></strong>
-            </h1>
-            <hr>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <div id="test"><p class="text-faded mb-5">{{ print }}</p></div>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href=".">Next Horoscope</a>
-          </div>
-        </div>
-      </div>
-    </header>
 <body>
     <!-- Bootstrap core JavaScript -->
     <script src="/static/vendor/jquery/jquery.min.js"></script>

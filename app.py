@@ -35,5 +35,8 @@ def displayrando():
     horrorscope = make_horror()
     return render_template("rando.html", print=horrorscope)
 
+@app.route("/about")
+def displayabout():
+    return render_template("about.html")
 if __name__ == "__main__":
-    app.run()
+    app.run(debug = True)
