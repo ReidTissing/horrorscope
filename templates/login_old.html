@@ -1,0 +1,54 @@
+<!doctype html>
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+.container {
+    max-width: 100%;
+    width: 60%;
+	padding-bottom: 0px;
+	}
+</style>
+<title>Login</title>
+<body>
+	  <center>
+  <div class="container">
+    <div class="panel panel-default">
+    <div class="panel-heading"><h1>Sign In</h1></div>
+    <div class="panel-body">
+	<center>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.username.label }}<br>
+            {{ form.username(size=32) }}<br>
+            {% for error in form.username.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.password.label }}<br>
+            {{ form.password(size=32) }}<br>
+            {% for error in form.password.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+                {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        
+            {% for message in messages %}
+            <span style="color: red;">[{{ message }}]</span><br><br>
+            {% endfor %}
+        </ul>
+		</center>
+        {% endif %}
+        {% endwith %}
+        <p>{{ form.submit() }}</p>
+    </form>
+    </center>
+    </div>
+   </div>
+  </div>
+  </center>
+</body>
+{% endblock %}

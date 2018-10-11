@@ -1,0 +1,94 @@
+{
+  "open": [
+    "you may",
+    "you will",
+    "you can",
+    "you should"
+  ],
+  "reminder": [
+  "Keep in mind: ",
+  "Remember, ",
+  "Be aware, "
+  ],
+  "verb": [
+    "find",
+    "discover",
+    "encounter",
+    "uncover",
+    "remember",
+	"forget",
+	"create",
+	"enjoy",
+	"learn",
+	"decide",
+	"develop",
+	"realize"
+  ],
+  "noun": [
+    "challenges",
+    "jealousy",
+    "environments",
+    "work",
+	"deeds",
+    "satisfaction",
+    "change",
+    "business",
+    "friends",
+	"friendships",
+	"romance",
+	"love",
+	"finances",
+    "habits",
+    "situations",
+    "feelings",
+    "plans",
+	"people",
+	"rewards",
+	"relationships"
+  ],
+  "adjective": [
+  "easy",
+  "difficult",
+  "expensive",
+  "tired",
+  "sensitive",
+  "defiant",
+  "important",
+  "necessary",
+  "positive",
+  "negative",
+  "new",
+  "exhausting",
+  "frustrating",
+  "rewarding",
+  "old"
+  ],
+  "planet": [
+  "the moon",
+  "Mercury",
+  "Jupiter",
+  "Mars",
+  "Saturn",
+  "Neptune",
+  "Venus"
+  ],
+  "phaseverb": [
+  "entering",
+  "leaving",
+  "coming into"
+  ],
+  "numeral": [
+  "first",
+  "second",
+  "third",
+  "fourth",
+  "fifth",
+  "sixth",
+  "seventh",
+  "eighth",
+  "ninth",
+  "tenth",
+  "eleventh",
+  "twelfth"
+  ]
+}

@@ -1,0 +1,96 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<html>
+<head>
+  <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+  <!--<style>
+  h2 {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 1.8;
+    -webkit-text-stroke: 1.5px black;
+        vertical-align: middle;
+    font-weight: 800;
+  }
+  a {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: white;
+    font-size: 2em;
+    text-align: bottom;
+    text-decoration: none;
+    letter-spacing: 1px;
+        vertical-align: middle;
+    font-weight: 800;
+  }
+
+  div.container {
+	position: relative;
+	height: 110px;
+	width: 120px;
+	border-style: none;
+
+}
+
+div.container div.text {
+background-color: lightblue;
+  position: absolute;
+	bottom: 0px;
+	border: none ;
+}
+
+div.inner {
+position: relative;
+height: 90%;
+width: 90%;
+}
+-->
+<style>
+  .imageCycle1{
+background:url(bg.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+ filter:    progid:DXImageTransform.Microsoft.AlphaImageLoader(src='bg.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='bg.jpg', sizingMethod='scale')";}
+</style>
+<script type="text/javascript">
+var totalCount = 5;
+function ChangeIt()
+{
+var num = Math.ceil( Math.random() * totalCount );
+document.body.background = '/static/images/'+num+'.jpg';
+document.body.style.backgroundSize = "cover";// Background repeat
+}
+</script>
+</head>
+<body>
+
+
+
+
+
+          <center><h2>{{ print }}</h2></center>
+          <blockquote class="blockquote text-center">
+  <p class="mb-0">{{ print }}</p>
+  
+</blockquote>
+        </header>
+
+
+<footer>
+    <center><div class="container">
+	<div class="text">
+		<a href="/bg">next horoscope</a>
+      </div>
+</a>
+</footer>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+<script type="text/javascript">
+ChangeIt();
+</script>
+</html>
