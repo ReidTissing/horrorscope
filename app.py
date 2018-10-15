@@ -14,7 +14,9 @@ def make_horror():
         text = f.read()
     with open("horror.json") as g:
         text2 = g.read()
-    text = text + text2
+    with open("hor.json") as e:
+        text3 = e.read()
+    text = text + text2 + text3
     # Build the model.
     text_model = markovify.Text(text)
     sents = ""
