@@ -17,7 +17,7 @@ pkg-resources==0.0.0
 pyparsing==2.2.2
 python-dateutil==2.7.3
 pytz==2018.5
-requests==2.19.1
+requests>=2.20.0
 six==1.11.0
 textblob==0.15.1
 Unidecode==1.0.22
